@@ -23,6 +23,16 @@
             font-family: "Sora", serif;
             font-optical-sizing: auto;
         }
+
+        #myAnimation {
+            animation: mymove 10s infinite;
+        }
+
+        @keyframes mymove {
+            50% {
+                font-size: 2rem;
+            }
+        }
     </style>
     <!-- customize things -->
     <script>
@@ -41,57 +51,131 @@
 </head>
 
 <body class="sora-regular">
-    <header class="md:container md:mx-auto bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
-        <nav class="my-6">
-            <div class="navbar border-b-2 border-[#179800] md:border-none  ">
-                <div class="navbar-start ">
-                    <img src="images/logo-header.png" alt="">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost ml-36 md:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#179800]" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <div class="container mx-auto ">
+            <nav class="my-6">
+                <div class="navbar border-b-2 border-[#179800] md:border-none  ">
+                    <div class="navbar-start ">
+                        <img src="images/logo-header.png" alt="">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost ml-36 md:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#179800]" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+
                         </div>
 
                     </div>
+                    <div class="navbar-center hidden md:flex">
+                        <ul class="menu menu-horizontal text-xl px-1">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
 
-                </div>
-                <div class="navbar-center hidden md:flex">
-                    <ul class="menu menu-horizontal text-xl px-1">
-                        <li><a>Product</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </div>
+                    <div class="navbar-end gap-6 hidden md:flex">
+                        <a><i class="fa-solid  text-xl fa-magnifying-glass"></i></a>
+                        <a><i class="fa-solid  text-xl fa-cart-shopping"></i></a>
+                        <a class="btn border-[#179800] text-black text-lg">Login</a>
+                        <a class="btn bg-[#179800] text-white text-lg">Register</a>
 
-                <div class="navbar-end gap-6 hidden md:flex">
-                    <a><i class="fa-solid  text-xl fa-magnifying-glass"></i></a>
-                    <a><i class="fa-solid  text-xl fa-cart-shopping"></i></a>
-                    <a class="btn border-[#179800] text-black text-lg">Login</a>
-                    <a class="btn bg-[#179800] text-white text-lg">Register</a>
-
+                    </div>
                 </div>
+            </nav>
+            <div class="grid justify-center my-24 space-y-8">
+
+                <h1 id="myAnimation" class="text-6xl font-bold  text-center">Freshness <span class="text-[#179800]">You
+                        Can
+                        <br>
+                        Count</span> On, Prices You’ll Love!</h1>
+                <p class="text-center  text-xl">Shop your daily essentials at unbeatable prices. From fresh
+                    produce to pantry<br>
+                    staples, we’ve got you
+                    covered every day!</p>
+                <img src="images/hero-vegetables.png" alt="">
             </div>
-        </nav>
-        <div class="grid justify-center my-24 space-y-8">
-
-            <h1 class="text-5xl font-bold  text-center">Freshness <span class="text-[#179800]">You Can <br>
-                    Count</span> On, Prices You’ll Love!</h1>
-            <p class="text-center  text-xl">Shop your daily essentials at unbeatable prices. From fresh
-                produce to pantry<br>
-                staples, we’ve got you
-                covered every day!</p>
-            <img src="images/hero-vegetables.png" alt="">
         </div>
 
     </header>
 
     <!-- main section start -->
 
-    <main>
+    <main class="">
+        <!-- service section -->
+        <section class="my-24 md:container md:mx-auto">
+            <h3 class="text-[#179800] text-4xl font-bold my-16">Services</h3>
+            <!-- cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <!-- card-1 -->
+                <div class="card bg-[#EFEBE3] w-96  ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/service.png" alt="24/7 services" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">24/7 Services </h2>
+                        <p class="text-gray-600 text-xl">We are very concern for our customer. That's why we provide
+                            24/7
+                            services to our every
+                            customer in a efficient way.</p>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card bg-[#EFEBE3] w-96  ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/delivery.png" alt="fast-delivery" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">Fast Delivery</h2>
+                        <p class="text-gray-600 text-xl">Fast Delivery is our main aim. After the order of any purchase
+                            we provide our best service to reach this as fast as possible</p>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card bg-[#EFEBE3] w-96  ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/healthy.png" alt="healthy product" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">Healthy Products </h2>
+                        <p class="text-gray-600 text-xl">Healthy product is the main reason you can turst us. We provide
+                            100% pure product which is BSTI certified.</p>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+
+        <!-- popular section -->
+
+        <section class="my-24 bg-[#EFEBE3]">
+            <div class="md:container md:mx-auto py-24">
+                <h3 class="text-[#179800] text-4xl font-bold my-16">Popular Product</h3>
+                <!-- card container -->
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="w-full lg:w-1/3 m-1">
+                        <div class="card w-full lg:w-96   bg-gradient-to-b from-[#24d721f1] to-[#ecebe7] pt-16">
+                            <div class=" card-body   space-y-4">
+                                <h2 class="card-title text-white text-3xl font-bold  ">30% OFF</h2>
+                                <p class="text-lg">Discover of 30% discound on various product. Order now with out any
+                                    further due.</p>
+                                <div class="card-actions">
+                                    <a class="btn bg-white text-black text-lg">Buy Now</a>
+                                </div>
+                            </div>
+                            <div><img class=" ml-12  md:ml-28" src="images/vegetable-offer.png" alt=""></div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
 
     </main>
