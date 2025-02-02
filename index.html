@@ -42,11 +42,40 @@
 </head>
 
 <body class="sora-regular">
-    <header>
+    <header class="md:container md:mx-auto">
+        <nav class="my-6">
+            <div class="navbar border-b-2 border-[#179800] md:border-none  ">
+                <div class="navbar-start ">
+                    <img src="images/logo-header.png" alt="">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost ml-36 md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#179800]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
 
-        <h2 class="text-5xl">THis is heading 2</h2>
+                    </div>
 
+                </div>
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal text-xl px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
 
+                <div class="navbar-end gap-6 hidden md:flex">
+                    <a><i class="fa-solid  text-xl fa-magnifying-glass"></i></a>
+                    <a><i class="fa-solid  text-xl fa-cart-shopping"></i></a>
+                    <a class="btn border-[#179800] text-black text-lg">Login</a>
+                    <a class="btn bg-[#179800] text-white text-lg">Register</a>
+
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- main section start -->
